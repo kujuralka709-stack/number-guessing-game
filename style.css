@@ -1,0 +1,131 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.game-container {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.range-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    background: #f1f3ff;
+    color: #555;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+#guess-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#guess-input {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+}
+
+#guess-input:focus {
+    border-color: #667eea;
+}
+
+button {
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#guess-btn {
+    background: #667eea;
+    color: white;
+}
+
+#guess-btn:hover {
+    background: #5366d8;
+}
+
+#message {
+    margin: 22px 0;
+    min-height: 25px;
+    font-weight: bold;
+    color: #555;
+    line-height: 1.5;
+}
+
+.attempt-box {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.attempt-box p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.attempt-box h2 {
+    color: #667eea;
+    font-size: 30px;
+}
+
+#restart-btn {
+    background: #28a745;
+    color: white;
+    width: 100%;
+}
+
+#restart-btn:hover {
+    background: #218838;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+```
